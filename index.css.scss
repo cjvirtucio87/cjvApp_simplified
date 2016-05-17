@@ -1,0 +1,86 @@
+html,
+body {
+  height: 100%;
+  background-color: black;
+}
+
+body {
+  color: #fff;
+  text-align: center;
+}
+
+/* Masthead basic structure. */
+
+.masthead-nav {
+  float: right;
+  margin-right: 35px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+
+.masthead-nav > li + li {
+  margin-left: 18px;
+}
+
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+
+
+/* Centering and extra padding. */
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.cover {
+  padding: 0px 20px;
+}
+
+.row {
+  padding-top: 5px;
+}
+
+
+/* Extra detailing, colors, etc. */
+p {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.cover h1:first-of-type {
+  font-size: 4em;
+  font-family: 'Satisfy',
+}
+
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom: 2px solid red;
+}
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.cover p:first-line {
+  color: gray;
+}
+
+.subheading p:after {
+  content: "";
+  background-color: red;
+  border: 2px solid transparent;
+  width: 5px;
+  height: 5px;
+  position: fixed;
+}
