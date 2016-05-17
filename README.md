@@ -1,0 +1,1 @@
+slimmed down personal website
