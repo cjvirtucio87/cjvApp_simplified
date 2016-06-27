@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
+<head>
+  <!-- stylesheets and fonts -->
+  <link rel="stylesheet" type="text/css" href="./node_modules/fullpage.js/jquery.fullPage.css" />
+  
+  <!-- google resources -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+  <link href="./node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 
-    <!-- Google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans|Satisfy' rel='stylesheet' type='text/css'>
-  </head>
-  <div class="container">
-    <div class="row row-centered">
-      <div class="col-md-10 col-centered">
-        <header class="masthead clearfix">
-          <nav>
-            <ul class="nav masthead-nav">
-              <li><a href="https://medium.com/@cjvirtucio87">Blog</a></li>
-              <li><a href="http://www.linkedin.com/in/cjvirtucio">Linkedin</a></li>
-              <li><a href="http://www.github.com/cjvirtucio87">Github</a></li>
-            </ul>
-          </nav>
-        </header>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
 
-        <main class="cover">
-          <div class="hero">
-            <h1>cj virtucio</h1>
-            <p>web developer, book-reader, dreamer</p>
-          </div>
-          <div class="subheading">
-            <p class="lead">My name is CJ Virtucio, a California-based web developer.
-              I build on Ruby on Rails and am proficient in Ruby as well
-              as Javascript. Becoming a developer in the Bay Area is a dream
-              come true, and I would love nothing more than to fully
-              immerse myself within the development community!</p>
-            <p class="lead">I am proficient in Ruby, Javascript, Rails, CSS, HTML,
-              Bootstrap and Git. I enjoy working on front-end development the most,
-              where I'm able to utilize both artistic talent and logical reasoning.
-              I'm always looking for fascinating and complex projects to work on.</p>
-          </div>
-        </main>
-      </div>
+
+  <!-- fullpage.js scripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="./node_modules/fullpage.js/vendors/jquery.easings.min.js"></script>
+  <script type="text/javascript" src="./node_modules/fullpage.js/jquery.fullPage.js"></script>
+
+  <!-- fire up the js files -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+          verticalCentered: true,
+          css3: true,
+          sectionsColor: ['#669999', '#669999', '#669999']
+        });
+    });
+  </script>
+
+
+</head>
+
+
+<body>
+<div id="fullpage">
+  <div class="section" id="section0">
+    <h1>CJ Virtucio</h1>
+  </div>
+  <div class="section">
+    <div class="slide">
+      <h1>I build things.</h1>
+      <p>(click on the arrows!)</p>
+    </div>
+    <div class="slide" id="danebook">
+      <h1><a href="http://danebook-app.herokuapp.com">Danebook</a></h1>
+    </div>
+    <div class="slide" id="towerhanoigame">
+      <h1><a href="https://rubygems.org/gems/tower-hanoi-game">Tower of Hanoi</a></h1>
     </div>
   </div>
-  
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  
-  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <div class="section">
+    <h1>Let's talk!</h1>
+    <a href="http://www.linkedin.com/in/cjvirtucio"><i class="mdi mdi-linkedin"></i></a>
+    <a href="http://www.github.com/cjvirtucio87"><i class="mdi mdi-github-circle"></i></a>
+    <a href="http://www.medium.com/@cjvirtucio87"><i class="mdi mdi-medium"></i></a>
+    <a href="mailto:virtucio.cj@gmail.com?Subject=Greetings%21"><i class="mdi mdi-email"></i></a>
+  </div>
+</div>
+</body>
+
 </html>

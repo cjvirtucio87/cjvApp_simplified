@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section,.slide {
+  background-size: cover;
+  text-align: center;
+
+  i {
+    color: black;
+    font-size:36px;
+  }
+}
+
+#danebook {
+  background-color: #3385ff;
+}
+
+#towerhanoigame {
+  background-image: url(towerhanoigame.png);
+}
+
+h1, p {
+  color: #fff; 
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+h1 {
+  vertical-align: middle;
+  font-size: 5em;
+  margin: 0;
+  padding: 0;
+}
+
+//Removing <a> colors
+a, a:visited,a:hover,a:focus,a:hover, a:active { 
+  text-decoration: none; color:#fff; 
+}
+
+#section0 {
+  background-image: url(sunrise-1116985_1920.jpg);
+}
+
